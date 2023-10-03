@@ -133,14 +133,6 @@ footer {
 
 .barra-footer {
   display: flex;
-
-  justify-content: center;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.barra-footer {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
