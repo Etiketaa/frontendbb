@@ -117,7 +117,11 @@ header {
   gap: 20px;
   background-color: #e0e0e0;
   padding: 10px;
-  border-radius: 5px
+  border-radius: 5px;
+  width: 5vw;
+  height: auto;
+  min-width: 20px;
+  max-width: 100px;
 }
 
 .navegadores,
