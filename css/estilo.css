@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,200&display=swap');
 
+body {
+  background: white url(../Imagenes/diademuertos.jpg) center center fixed;
+  background-repeat: no-repeat;
+  overflow: auto;
+  background-size: cover;
+}
+
 h1 {
   font-size: 55px;
 }
 
 h2 {
-  font-size: 38px;
-}
-
-h3 {
   font-size: 38px;
 }
 
@@ -36,11 +39,14 @@ ul {
   text-shadow: 2px 2px 4px white;
 }
 
-.fondo {
-  background: white url(../Imagenes/diademuertos.jpg) center center fixed;
-  background-repeat: no-repeat;
-  overflow: auto;
-  background-size: cover;
+
+
+.content-carne {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row;
 }
 
 .imagenes {
@@ -48,8 +54,22 @@ ul {
   border-radius: 10px;
   padding: 0px;
   margin: 15px;
-  height: 30vh;
-  width: 50vw;
+  height: auto;
+  width: auto;
+  max-height: 30vh;
+  max-width: 50vw;
+}
+
+.centro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.texto-centro {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cent-imagenes {
@@ -59,7 +79,6 @@ ul {
   flex-direction: column;
   align-content: center;
 }
-
 
 .button {
   font-family: Georgia;
@@ -130,11 +149,14 @@ footer {
   margin: 10%;
 }
 
-.videos-iframe {
+iframe {
+  width: 512px;
+  height: 292px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .barra-footer,
@@ -162,7 +184,8 @@ footer {
 }
 
 .barrio {
-  width: 30vw;
+  width: 20vw;
+  height: auto;
 }
 
 .texto {
@@ -178,4 +201,21 @@ main {
   align-items: baseline;
   flex-wrap: nowrap;
   align-content: stretch;
+}
+
+.form-container {
+  width: 80vw;
+  max-width: 500px;
+  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: lightgrey;
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  border-radius: 5px;
 }
